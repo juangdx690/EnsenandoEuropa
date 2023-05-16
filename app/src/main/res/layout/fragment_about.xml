@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ui.fragments.AboutFragment">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:fontFamily="@font/title"
+               android:text="@string/aboutfragment_about"
+               android:textAllCaps="true"
+               android:textColor="@color/titulo"
+               android:textSize="30sp" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:fontFamily="@font/title"
+               android:text="@string/fragmentabout_descripcion"
+               android:textAllCaps="true"
+               android:textColor="@color/titulo"
+               android:textSize="20sp" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:text="@string/ejemplotxt"
+               android:textColor="@color/subtitulo"
+               android:textSize="12sp" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:fontFamily="@font/title"
+               android:text="@string/fragmentabout_desarrolladores"
+               android:textAllCaps="true"
+               android:textColor="@color/titulo"
+               android:textSize="20sp" />
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/cardJuan"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:backgroundTint="@color/white"
+               android:layout_marginHorizontal="16dp"
+               android:layout_marginVertical="8dp"
+               android:elevation="50dp"
+               app:cardCornerRadius="20dp"
+               app:cardUseCompatPadding="true">
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:id="@+id/imgJuan"
+                       android:layout_width="80dp"
+                       android:layout_height="80dp"
+                       android:adjustViewBounds="true"
+                       android:scaleType="centerCrop"
+                       android:src="@drawable/juan"
+                       app:layout_constraintDimensionRatio="3:2"
+                       app:layout_constraintTop_toTopOf="parent" />
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       app:layout_constraintBottom_toBottomOf="@+id/imgJuan"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toEndOf="@+id/imgJuan"
+                       app:layout_constraintTop_toTopOf="parent"
+                       android:gravity="center">
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:gravity="center">
+                           <TextView
+                               android:id="@+id/tvJuan"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="Juan"
+                               android:textColor="@color/black"
+                               android:textSize="14sp"
+                               android:textStyle="bold" />
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:gravity="center">
+                           <TextView
+                               android:id="@+id/tvJuanA"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="Amezcua López"
+                               android:textColor="@color/black"
+                               android:textSize="14sp"
+                               android:textStyle="bold" />
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           >
+                           <TextView
+                               android:id="@+id/tvCorreoJuan"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="juanbeasguadix@gmail.com"
+                               android:textColor="@color/black"
+                               android:textSize="11sp"
+                               />
+                       </LinearLayout>
+
+                   </LinearLayout>
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+           </androidx.cardview.widget.CardView>
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/cardDani"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:backgroundTint="@color/white"
+               android:layout_marginHorizontal="16dp"
+               android:layout_marginVertical="8dp"
+               android:elevation="50dp"
+               app:cardCornerRadius="20dp"
+               app:cardUseCompatPadding="true">
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:id="@+id/imgDani"
+                       android:layout_width="80dp"
+                       android:layout_height="80dp"
+                       android:adjustViewBounds="true"
+                       android:scaleType="centerCrop"
+                       android:src="@drawable/dani"
+                       app:layout_constraintDimensionRatio="3:2"
+                       app:layout_constraintTop_toTopOf="parent" />
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       app:layout_constraintBottom_toBottomOf="@+id/imgDani"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toEndOf="@+id/imgDani"
+                       app:layout_constraintTop_toTopOf="parent"
+                       android:gravity="center">
+
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           >
+                           <TextView
+                               android:id="@+id/tvDani"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="Daniel Alejandro"
+                               android:textColor="@color/black"
+                               android:textSize="14sp"
+                               android:textStyle="bold" />
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           >
+                           <TextView
+                               android:id="@+id/tvDaniA"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="Martín Romero"
+                               android:textColor="@color/black"
+                               android:textSize="14sp"
+                               android:textStyle="bold" />
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           app:layout_constraintBottom_toBottomOf="@+id/imgDani"
+                           app:layout_constraintEnd_toEndOf="parent"
+                           app:layout_constraintStart_toEndOf="@+id/imgDani"
+                           app:layout_constraintTop_toBottomOf="@+id/tvDani">
+                           <TextView
+                               android:id="@+id/tvCorreoDani"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="danimarom95@gmail.com"
+                               android:textColor="@color/black"
+                               android:textSize="11sp"
+                               />
+                       </LinearLayout>
+
+                   </LinearLayout>
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+           </androidx.cardview.widget.CardView>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:fontFamily="@font/title"
+               android:text="@string/rsocial"
+               android:textAllCaps="true"
+               android:textColor="@color/titulo"
+               android:textSize="20sp" />
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/cardInstagram"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:backgroundTint="@color/white"
+               android:layout_marginHorizontal="16dp"
+               android:layout_marginVertical="8dp"
+               android:elevation="50dp"
+               app:cardCornerRadius="20dp"
+               app:cardUseCompatPadding="true">
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:id="@+id/imgInstagram"
+                       android:layout_width="60dp"
+                       android:layout_height="60dp"
+                       android:adjustViewBounds="true"
+                       android:scaleType="centerCrop"
+                       android:src="@drawable/log_insta"
+                       app:layout_constraintDimensionRatio="3:2"
+                       app:layout_constraintTop_toTopOf="parent" />
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       app:layout_constraintBottom_toBottomOf="@+id/imgInstagram"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toEndOf="@+id/imgInstagram"
+                       app:layout_constraintTop_toTopOf="parent"
+                       android:gravity="center">
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:layout_marginStart="5dp">
+                           <TextView
+                               android:id="@+id/tvInstagram"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="Instagram EOI El Ejido"
+                               android:textColor="@color/black"
+                               android:textSize="14sp"
+                               android:textStyle="bold" />
+                           <ImageView
+                               android:layout_marginStart="5dp"
+                               android:id="@+id/imgEOIInstagrama"
+                               android:layout_width="30dp"
+                               android:layout_height="30dp"
+                               android:adjustViewBounds="true"
+                               android:scaleType="centerCrop"
+                               android:src="@drawable/logo_app"
+                               app:layout_constraintDimensionRatio="3:2"
+                               app:layout_constraintTop_toTopOf="parent" />
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+           </androidx.cardview.widget.CardView>
+           <androidx.cardview.widget.CardView
+               android:id="@+id/cardInstagram2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:backgroundTint="@color/white"
+               android:layout_marginHorizontal="16dp"
+               android:layout_marginVertical="8dp"
+               android:elevation="50dp"
+               app:cardCornerRadius="20dp"
+               app:cardUseCompatPadding="true">
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:id="@+id/imgInstagram2"
+                       android:layout_width="60dp"
+                       android:layout_height="60dp"
+                       android:adjustViewBounds="true"
+                       android:scaleType="centerCrop"
+                       android:src="@drawable/log_insta"
+                       app:layout_constraintDimensionRatio="3:2"
+                       app:layout_constraintTop_toTopOf="parent" />
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       app:layout_constraintBottom_toBottomOf="@+id/imgInstagram2"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toEndOf="@+id/imgInstagram2"
+                       app:layout_constraintTop_toTopOf="parent"
+                       android:gravity="center">
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:layout_marginStart="5dp">
+                           <TextView
+                               android:id="@+id/tvInstagram2"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="Instagram SEPIE"
+                               android:textColor="@color/black"
+                               android:textSize="14sp"
+                               android:textStyle="bold" />
+
+                           <ImageView
+                               android:layout_marginStart="5dp"
+                               android:id="@+id/imgSepieInstagram"
+                               android:layout_width="30dp"
+                               android:layout_height="30dp"
+                               android:adjustViewBounds="true"
+                               android:scaleType="centerCrop"
+                               android:src="@drawable/logo_sepie"
+                               app:layout_constraintDimensionRatio="3:2"
+                               app:layout_constraintTop_toTopOf="parent" />
+
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+           </androidx.cardview.widget.CardView>
+           <androidx.cardview.widget.CardView
+               android:id="@+id/cardInstagram3"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:backgroundTint="@color/white"
+               android:layout_marginHorizontal="16dp"
+               android:layout_marginVertical="8dp"
+               android:elevation="50dp"
+               app:cardCornerRadius="20dp"
+               app:cardUseCompatPadding="true">
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:id="@+id/imgInstagram3"
+                       android:layout_width="60dp"
+                       android:layout_height="60dp"
+                       android:adjustViewBounds="true"
+                       android:scaleType="centerCrop"
+                       android:src="@drawable/log_insta"
+                       app:layout_constraintDimensionRatio="3:2"
+                       app:layout_constraintTop_toTopOf="parent" />
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       app:layout_constraintBottom_toBottomOf="@+id/imgInstagram3"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toEndOf="@+id/imgInstagram3"
+                       app:layout_constraintTop_toTopOf="parent"
+                       android:gravity="center">
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:layout_marginStart="5dp">
+                           <TextView
+                               android:id="@+id/tvInstagram3"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="Instagram PLURI ALMERIA"
+                               android:textColor="@color/black"
+                               android:textSize="14sp"
+                               android:textStyle="bold" />
+                           <ImageView
+                               android:layout_marginStart="5dp"
+                               android:id="@+id/img1"
+                               android:layout_width="30dp"
+                               android:layout_height="30dp"
+                               android:adjustViewBounds="true"
+                               android:scaleType="centerCrop"
+                               android:src="@drawable/icono_ana"
+                               app:layout_constraintDimensionRatio="3:2"
+                               app:layout_constraintTop_toTopOf="parent" />
+
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+           </androidx.cardview.widget.CardView>
+           <androidx.cardview.widget.CardView
+               android:id="@+id/cardTwitter"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:backgroundTint="@color/white"
+               android:layout_marginHorizontal="16dp"
+               android:layout_marginVertical="8dp"
+               android:elevation="50dp"
+               app:cardCornerRadius="20dp"
+               app:cardUseCompatPadding="true">
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:id="@+id/imgtwitter"
+                       android:layout_width="60dp"
+                       android:layout_height="60dp"
+                       android:adjustViewBounds="true"
+                       android:scaleType="centerCrop"
+                       android:src="@drawable/twitter"
+                       app:layout_constraintDimensionRatio="3:2"
+                       app:layout_constraintTop_toTopOf="parent" />
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       app:layout_constraintBottom_toBottomOf="@+id/imgtwitter"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toEndOf="@+id/imgtwitter"
+                       app:layout_constraintTop_toTopOf="parent"
+                       android:gravity="center">
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:layout_marginStart="5dp">
+                           <TextView
+                               android:id="@+id/tvTwitter"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="Twitter PLURI ALMERIA"
+                               android:textColor="@color/black"
+                               android:textSize="14sp"
+                               android:textStyle="bold" />
+                           <ImageView
+                               android:layout_marginStart="5dp"
+                               android:id="@+id/img2"
+                               android:layout_width="30dp"
+                               android:layout_height="30dp"
+                               android:adjustViewBounds="true"
+                               android:scaleType="centerCrop"
+                               android:src="@drawable/icono_ana"
+                               app:layout_constraintDimensionRatio="3:2"
+                               app:layout_constraintTop_toTopOf="parent" />
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+           </androidx.cardview.widget.CardView>
+           <androidx.cardview.widget.CardView
+               android:id="@+id/cardPluri"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:backgroundTint="@color/white"
+               android:layout_marginHorizontal="16dp"
+               android:layout_marginVertical="8dp"
+               android:elevation="50dp"
+               app:cardCornerRadius="20dp"
+               app:cardUseCompatPadding="true">
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:id="@+id/imgpluri"
+                       android:layout_width="60dp"
+                       android:layout_height="60dp"
+                       android:adjustViewBounds="true"
+                       android:scaleType="centerCrop"
+                       android:src="@drawable/icono_ana"
+                       app:layout_constraintDimensionRatio="3:2"
+                       app:layout_constraintTop_toTopOf="parent" />
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       app:layout_constraintBottom_toBottomOf="@+id/imgpluri"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toEndOf="@+id/imgpluri"
+                       app:layout_constraintTop_toTopOf="parent"
+                       android:gravity="center">
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:layout_marginStart="5dp">
+                           <TextView
+                               android:id="@+id/tvPluri"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="WEB: PLURI ALMERIA"
+                               android:textColor="@color/black"
+                               android:textSize="14sp"
+                               android:textStyle="bold" />
+                           <ImageView
+                               android:layout_marginStart="5dp"
+                               android:id="@+id/img3"
+                               android:layout_width="30dp"
+                               android:layout_height="30dp"
+                               android:adjustViewBounds="true"
+                               android:scaleType="centerCrop"
+                               android:src="@drawable/icono_ana"
+                               app:layout_constraintDimensionRatio="3:2"
+                               app:layout_constraintTop_toTopOf="parent" />
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+           </androidx.cardview.widget.CardView>
+
+       </LinearLayout>
+
+   </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+         <androidx.cardview.widget.CardView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:elevation="50dp"
+             android:padding="10dp"
+             app:cardCornerRadius="12dp">
+
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:gravity="center"
+                 android:background="@color/bck_card"
+                 >
+
+                 <TextView
+                     android:id="@+id/tvTitleComida"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="@font/title"
+                     android:textColor="@color/titulo"
+                     android:textSize="35sp"
+                     android:textStyle="bold"
+                     android:textAllCaps="true"
+                     android:textAlignment="center"
+                     android:text="@string/fragment_comida_comidatipica" />
+
+
+
+
+
+             </LinearLayout>
+
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:elevation="50dp"
+             android:padding="10dp"
+             android:layout_marginTop="20dp"
+             app:cardCornerRadius="12dp"
+             android:layout_gravity="center">
+
+             <LinearLayout
+                 android:background="@color/bck_card_gris"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical"
+                 android:layout_gravity="center"
+                 android:padding="20dp">
+
+                 <TextView
+                     android:layout_gravity="center"
+                     android:id="@+id/tvComida"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="@font/title"
+                     android:textColor="@color/titulo"
+                     android:textSize="25sp"
+                     android:textStyle="bold"
+                     android:textAlignment="center"
+                     android:text="Migas" />
+
+                 <ImageView
+                     android:id="@+id/imgComida"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:layout_marginTop="20dp"
+                     android:background="@drawable/bck_ciudad"
+                     tools:src="@drawable/ejido" />
+
+
+                 <TextView
+                     android:layout_marginTop="10dp"
+                     android:layout_gravity="center"
+                     android:id="@+id/tvDescripcionComida"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textColor="@color/subtexto"
+                     android:textSize="20sp"
+                     android:textAlignment="center"
+                     android:text="Migas" />
+
+             </LinearLayout>
+
+         </androidx.cardview.widget.CardView>
+
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:elevation="50dp"
+             android:padding="10dp"
+             android:layout_marginTop="20dp"
+             app:cardCornerRadius="12dp">
+
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:gravity="center"
+                 android:background="@color/bck_card"
+                 >
+
+                 <TextView
+                     android:id="@+id/tvTitleRestaurante"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="@font/title"
+                     android:text="@string/fragment_comida_restaurante"
+                     android:textAlignment="center"
+                     android:textAllCaps="true"
+                     android:textColor="@color/titulo"
+                     android:textSize="35sp"
+                     android:textStyle="bold" />
+
+
+             </LinearLayout>
+
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:elevation="50dp"
+             android:padding="10dp"
+             android:layout_marginTop="20dp"
+             app:cardCornerRadius="12dp">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical"
+                 android:layout_gravity="center"
+                 android:padding="20dp"
+                 android:background="@color/bck_card_gris">
+
+
+                 <TextView
+                     android:layout_gravity="center"
+                     android:id="@+id/tvRestaurante"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="@font/title"
+                     android:textColor="@color/titulo"
+                     android:textSize="25sp"
+                     android:textStyle="bold"
+                     android:textAlignment="center"
+                     android:text="Galindo Restaurant" />
+
+                 <ImageView
+                     android:id="@+id/imgRestaurante"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:layout_marginTop="20dp"
+                     android:background="@drawable/bck_ciudad"
+                     tools:src="@drawable/ejido" />
+
+
+                 <TextView
+                     android:layout_marginTop="10dp"
+                     android:layout_gravity="center"
+                     android:id="@+id/tvDescripcionRestaurante"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textColor="@color/subtexto"
+                     android:textSize="20sp"
+                     android:textAlignment="center"
+                     tools:text="Restaurante bonito" />
+
+
+             </LinearLayout>
+
+         </androidx.cardview.widget.CardView>
+     </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

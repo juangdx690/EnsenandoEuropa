@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".ui.fragments.LoginFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/btnloginBACK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/icono_flecha_atras" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="100dp"
+               android:orientation="horizontal"
+               android:layout_marginTop="20dp"
+               >
+
+               <TextView
+                   android:id="@+id/tvloginTitle"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:layout_weight="1"
+                   android:fontFamily="@font/title"
+                   android:text="@string/loginregistrerfragment_acceso"
+                   android:textAllCaps="true"
+                   android:textColor="@color/titulo"
+                   android:textSize="41sp" />
+               <com.airbnb.lottie.LottieAnimationView
+                   android:layout_weight="1"
+                   android:visibility="gone"
+                   android:id="@+id/animation_view"
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_gravity="center"
+                   app:lottie_rawRes="@raw/loading"
+                   app:lottie_autoPlay="true"
+                   app:lottie_loop="true" />
+
+           </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Correo"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/framgent_login_correo"
+                    android:textColorHint="@color/texto"
+                    app:boxStrokeColor="@color/texto"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/texto"
+                    app:hintTextColor="@color/texto"
+                    app:startIconDrawable="@drawable/icono_email"
+                    app:startIconTint="@color/texto">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:textColor="@color/texto"
+                        android:id="@+id/txtCorreo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textEmailAddress" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Clave"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/framgent_login_contraseña"
+                    android:textColorHint="@color/texto"
+                    app:boxStrokeColor="@color/texto"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:hintTextColor="@color/texto"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/texto"
+                    app:startIconDrawable="@drawable/icono_candado"
+                    app:startIconTint="@color/texto">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtClave"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textPassword"
+                        android:textColor="@color/texto" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/btnResetClave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:backgroundTint="@color/botones_background2"
+                    android:text="@string/framgent_login_contraseniaolvidada"
+                    android:textColor="@color/botones_text2"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnloginlOGIN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/botones_background"
+                android:elevation="5dp"
+                android:enabled="false"
+                android:text="@string/framgent_initial_login_register_login"
+                android:textColor="@color/botones_text" />
+
+
+            <Button
+                android:id="@+id/btnloginREGISTER"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/botones_background2"
+                android:elevation="5dp"
+                android:text="@string/framgent_initial_login_register_signup"
+                android:textColor="@color/botones_text2" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

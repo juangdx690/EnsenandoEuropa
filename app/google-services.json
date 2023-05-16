@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "485167309196",
+    "firebase_url": "https://guiaviajeerasmusmurgi-default-rtdb.firebaseio.com",
+    "project_id": "guiaviajeerasmusmurgi",
+    "storage_bucket": "guiaviajeerasmusmurgi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485167309196:android:0ebb4abb86815f6c69b6a9",
+        "android_client_info": {
+          "package_name": "com.example.guiaviaje"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485167309196-2dpa4kasmogrj4t1hjqvqnubanoli6sp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0viNDFyXtgBGVIW3llueZr3X2_mRpCak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485167309196-2dpa4kasmogrj4t1hjqvqnubanoli6sp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485167309196:android:7acf2d6bd77daf8c69b6a9",
+        "android_client_info": {
+          "package_name": "com.murgierasmus.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485167309196-2dpa4kasmogrj4t1hjqvqnubanoli6sp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0viNDFyXtgBGVIW3llueZr3X2_mRpCak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485167309196-2dpa4kasmogrj4t1hjqvqnubanoli6sp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

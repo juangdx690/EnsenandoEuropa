@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/imgPerfil"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center|clip_vertical|center_horizontal"
+                    android:scaleType="centerCrop"
+                    android:clickable="false"
+                    android:focusable="false"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Usuario"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtCorreo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="usuario@gmail.com"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/background_perfildatos"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/tituloContrasena"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/framgent_profile_contraseniadospuntos"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/btnContrasena"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/framgent_profile_pulsacontrasenia"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/tituloTipoUsuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="18sp"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/framgent_profile_tipousuario"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/txtTipoUsuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:text="@string/framgent_profile_usuario"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnEditar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/black"
+                    android:drawableLeft="@drawable/baseline_edit_24"
+                    android:gravity="center"
+                    android:text="@string/btneditar"
+                    android:textColor="@color/white"
+                    />
+
+                <Button
+                    android:backgroundTint="@color/black"
+                    android:textColor="@color/white"
+                    android:id="@+id/btnCerrarSesion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/framgent_profile_logout"
+                    android:drawableLeft="@drawable/icono_cerrar_buttom"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

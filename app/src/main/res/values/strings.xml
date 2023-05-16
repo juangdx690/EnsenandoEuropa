@@ -1,0 +1,209 @@
+<resources>
+    <string name="app_name">Enseñando Europa</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="ejemplotxt">El proyecto “Puente de Culturas. Enseñando Europa” se encuadra en las acciones Erasmus+ de la EOI El Ejido y tiene una duración de 6 años dese 2021 hasta 2027. Como el nombre del proyecto indica, pretende ser un puente entre culturas, acercando al alumnado de la EOI El Ejido la realidad de la cultura de los países cuyos idiomas aprenden, pero también de otros países europeos, mostrando la diferencia entre estereotipos y realidad. Además, el objetivo principal del proyecto es mejorar la calidad educativa de nuestro centro optimizando el proceso de enseñanza-aprendizaje y ofreciendo nuevas oportunidades y experiencias de aprendizaje a nuestro alumnado. Junto con este objetivo central hay otros objetivos que se pretenden alcanzar:
+\n1)	Evitar el abandono escolar mejorando la calidad del profesorado
+\n2)	Motivar al alumnado en el aula
+\n3)	Mejorar la competencia digital
+\n4)	Mejorar la competencia lingüística
+\n5)	Mejorar la competencia sociocultural
+\nEste proyecto dará la oportunidad al alumnado de conocer de primera mano la realidad y la cultura de nuestros vecinos europeos a través de distintas movilidades en los que experimentarán una inmersión lingüística y cultural total. Asimismo, los docentes del centro tendrán la oportunidad de realizar cursos de formación y actividades de observación directa en el aula en otros países que contribuyan a la mejora significativa de su labor diaria como docentes.
+
+    </string>
+    <!--Paises Spinner-->
+    <string name="españa">España</string>
+    <string name="francia">Francia</string>
+    <string name="portugal">Portugal</string>
+    <string name="irlanda">Irlanda</string>
+    <string name="uk">Reino Unido</string>
+    <string name="alemania">Alemania</string>
+    <string name="italia">Italia</string>
+
+    <!--<string name="app_name">Puente de Culturas.Enseñando Europa</string>-->
+    <!--Permisos FireStoreService-->
+    <string name="firestoreservice_permiso">Permisos otorgados</string>
+    <string name="firestoreservice_permisoOtorgado">Se te han sido otorgados los permisos de administrador</string>
+
+    <!--*************************** FRAGMENTS ******************-->
+    <!--FragmentTransporte-->
+    <string name="fragmenttransporte_comoviajo">¿Como viajar?</string>
+    <string name="fragmenttransporte_dondecojo">¿Dónde cojo un avión?</string>
+    <string name="fragmenttransporte_comollego">¿Cómo llego a la ciudad?</string>
+    <string name="idiomasehabla">¿Qué idioma se habla?</string>
+
+    <!--AboutFragment-->
+    <string name="aboutfragment_about">Acerca de</string>
+    <!--HomeFragment-->
+    <string name="homefragment_inicio">Inicio</string>
+    <string name="homefragment_admin">Admin</string>
+    <string name="homefragment_usuario">usuario</string>
+
+    <!--LoginFragment-->
+    <string name="loginfragment_inicio">Inicio Sesión</string>
+    <string name="loginfragment_logincorrecto">Inicio de Sesión Correcto</string>
+
+    <!--LoginRegistrerFragment-->
+    <string name="loginregistrerfragment_acceso">Acceso</string>
+
+    <!--ProfileFragment-->
+    <string name="profilefragment_perfil">Perfil</string>
+
+    <!--RegisterFragment-->
+    <string name="registerfragment_registro">Registro</string>
+    <string name="registerfragment_camponovacio">Este campo no puede estar vacío.</string>
+    <string name="registerfragment_formatoemail">Tiene que ser formato e-mail.</string>
+    <string name="registerfragment_formatocontra">Formato de contraseña incorrecto.</string>
+    <string name="registerfragment_coincidircontra">Tienen que coincidir las contraseñas.</string>
+
+    <!--VerificationFragment-->
+    <string name="verificationfragment_verification">Verificación</string>
+
+    <!--****************** MAPS *****************************-->
+
+    <!--AniadirUbicacion-->
+    <string name="aniadirubi_ciudad">Ciudad agregada correctamente</string>
+    <string name="aniadirubi_seleccionar">Debe seleccionar una ubicacion para continuar</string>
+    <string name="aniadirubi_gps">Error: Debe habilitar GPS para calcular ruta</string>
+    <string name="aniadirubi_permisos">Ve a ajustes y acepta los permisos</string>
+    <string name="aniadirubi_permisosLoca">Para activar la localización ve a ajustes y activa los permisos</string>
+    <string name="aniadirubi_ubiTiempoReal">Tu ubicación en tiempo real</string>
+    <string name="aniadirubi_ubi">Ubicación</string>
+
+    <!--MapaAeropuertos-->
+    <string name="aeropuertos_almeria">Aeropuerto Almería</string>
+    <string name="aeropuertos_granada">Aeropuerto Granada</string>
+    <string name="aeropuertos_malaga">Aeropuerto Málaga</string>
+    <string name="aeropuertos_madrid">Aeropuerto Madrid</string>
+    <string name="aeropuertos_elige">Elige el aeropuerto al que deseas llegar</string>
+
+    <!--MapaFinal-->
+    <string name="mapafinal_destino">Destino</string>
+
+    <!--****************** DIALOGS *****************************-->
+    <string name="dialogs_nointernet">No hay conexión a internet. Por favor, compruebe su conexión e inténtelo de nuevo.</string>
+    <string name="dialogs_nocampo">No puedes dejar ningun campo vacio, ni dejar la imagen de por defecto.</string>
+    <string name="dialogs_emailexiste">El email ya existe, intente con otro email.</string>
+    <string name="dialogs_faltanpermisos">Faltan permisos, pulsa ok para ir a ajustes y activarlo.</string>
+    <string name="dialogs_errorinicio">Error al iniciar sesion.</string>
+
+    <!--**************** METHODS ********************************-->
+    <string name="methods_verification">Verificación de cuenta</string>
+    <string name="methods_codigoverification">Su código de verificación es </string>
+    <string name="methods_canalnotificacion">Canal de notificación</string>
+    <string name="methods_descripcioncanalnotificacion">Descripción del canal de notificación</string>
+
+
+    <!--****************** LAYOUTS *****************************-->
+    <!--Maps-->
+    <string name="aeropuertos">Ir a...</string>
+    <string name="calcula">Calcula tu ruta</string>
+    <string name="guardar">Guardar</string>
+    <!--Fragment About-->
+    <string name="fragmentabout_desarrolladores">DESARROLLADORES</string>
+    <string name="fragmentabout_descripcion">DESCRIPCION DEL PROYECTO</string>
+    <!--Fragment AutoCompleted-->
+    <string name="fragment_acompleted_veri">Escribe el número de verificación</string>
+    <!-- Fragment Ciudad Home-->
+    <string name="fragment_ciudadhome_nombreCiudad">NOMBRE CIUDAD</string>
+    <string name="fragment_ciudadhome_transporte">TRANSPORTE</string>
+    <string name="fragment_ciudadhome_comida">COMIDA</string>
+    <string name="fragment_ciudadhome_ocio">OCIO Y CULTURA</string>
+
+    <!-- Fragment ComidaRestaurante-->
+    <string name="fragment_comida_comidatipica">¿Qué comida es típica?</string>
+    <string name="fragment_comida_restaurante">¿Dónde ir a comer?</string>
+
+
+    <!--Fragment Completed-->
+    <string name="framgent_completed_veri">Verifica la cuenta</string>
+    <string name="framgent_completed_numeroveri">Escribe el número de verificación</string>
+    <string name="framgent_completed_comprobar">COMPROBAR</string>
+    <string name="framgent_completed_reenviarCodigo">REENVIAR CÓDIGO</string>
+    <string name="framgent_completed_finalizar">FINALIZAR</string>
+
+    <!--Culturas  y Lugares -->
+    <string name="framgent_cultura_idioma">¿Qué idioma se habla?</string>
+
+
+    <!--Fragment Initial Login Register-->
+    <string name="framgent_initial_login_register_escuela">Escuela de idiomas</string>
+    <string name="framgent_initial_login_register_cuentaescuela">Cuenta de la app de Escuela de idiomas de El Ejido</string>
+    <string name="framgent_initial_login_register_login">ACCEDER</string>
+    <string name="framgent_initial_login_register_signup">REGISTRARSE</string>
+    <!--Fragment LOGIN-->
+    <string name="framgent_login_contraseniaolvidada">¿Has olvidado la contraseña?</string>
+    <string name="framgent_login_crearcuenta">CREAR CUENTA</string>
+    <string name="framgent_login_correo">Correo</string>
+    <string name="framgent_login_contraseña">Contraseña</string>
+
+    <!--Fragment Profile-->
+    <string name="framgent_profile_usuariodospuntos">Usuario:</string>
+    <string name="framgent_profile_usuario">Usuario</string>
+    <string name="framgent_profile_contraseniadospuntos">Contraseña:</string>
+    <string name="framgent_profile_contrasenia">Contraseña</string>
+    <string name="framgent_profile_pulsacontrasenia">Pulsa para cambiar la contraseña</string>
+    <string name="framgent_profile_tipousuario">Tipo Usuario:</string>
+    <string name="framgent_profile_solicitaradmin">Solicitar Admin</string>
+    <string name="framgent_profile_veropcionesadmin">Ver opciones Admin</string>
+    <string name="framgent_profile_logout">CERRAR SESIÓN</string>
+    <!--Fragment Register-->
+    <string name="framgent_register_nombreusuario">Nombre Usuario</string>
+    <string name="framgent_register_next">SIGUIENTE</string>
+    <string name="framgent_register_confirmcontrasenia">Confirmar contraseña</string>
+    <!--Fragment Registrar Ciudad1-->
+    <string name="framgent_registrar_ciudad1_registrarciudad">REGISTRAR CIUDAD</string>
+    <string name="framgent_registrar_ciudad1_nombreciudad">Nombre de la ciudad</string>
+    <string name="framgent_registrar_ciudad1_escribedescripcion">Escribe una descripción</string>
+    <!--Fragment Registrar Ciudad2-->
+    <string name="framgent_registrar_ciudad2_nombrereceta">Nombre de la receta</string>
+    <!--Fragment Registrar Ciudad3-->
+    <string name="framgent_registrar_ciudad3_nombrerestaurante">Nombre del restaurante</string>
+    <!--Fragment Registrar Ciudad4-->
+    <string name="framgent_registrar_ciudad4_nombreactividad">Nombre de la actividad</string>
+    <!--Fragment Registrar Ciudad5-->
+    <string name="festividad">Introduce un lugar o festividad</string>
+    <!--Fragment Registrar Ciudad6-->
+    <string name="idiomadialecto">Introduce idiomas y dialectos</string>
+    <string name="agregarciudad">AGREGAR CIUDAD</string>
+    <!--Item Ciudad Admin-->
+    <string name="item_ciudad_admin_ciudad">Ciudad</string>
+    <!--Item_Spinner-->
+    <string name="item_spinner_nombrepais">Nombre Pais</string>
+
+
+    <string name="framgent_EDITAR_ciudad_registrarciudad">EDITAR CIUDAD</string>
+
+    <string name="nohayciudades">No hay ciudades</string>
+    <string name="btneditar">Editar perfil</string>
+    <string name="msgHabilitadoOpcionesEditar">Se han activado la opciones de edicion de perfil</string>
+    <string name="msgDesHabilitadoOpcionesEditar">Se han desactivado la opciones de edicion de perfil</string>
+    <string name="fotoactualizada">Se ha actualizado la foto de perfil</string>
+    <string name="cambiarpass">Cambiar Contraseña</string>
+
+    <string name="ingresecorreo">Ingrese su correo electrónico</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="resetocorrecto">Se ha enviado un correo electrónico para restablecer su contraseña</string>
+    <string name="resetoincorrecto">Error al enviar el correo electrónico de restablecimiento de contraseña</string>
+    <string name="nocorreo">Ese no es tu correo</string>
+
+    <string name="resetpass">Resetear Contraseña</string>
+    <string name="devJuan">Desarrollador Juan</string>
+    <string name="devDani">Desarrollador Daniel</string>
+
+
+    <!--Crear/Modificar V2-->
+    <string name="idiomaDialecto">Idiomas y Dialectos</string>
+    <string name="festividadNuevo">Lugar o Festividad</string>
+    <string name="actividad">Actividad de Interés</string>
+    <string name="restaurante">Restaurante de Interés</string>
+    <string name="receta">Receta típica</string>
+
+
+    <string name="rsocial">Redes Sociales</string>
+
+
+</resources>

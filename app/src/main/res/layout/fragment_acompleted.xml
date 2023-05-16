@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30sp"
+    tools:context=".ui.fragments.VerificationFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/etverificationTitle"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:background="@color/cargando"
+            android:layout_gravity="center"
+            android:textAlignment="center"/>
+
+        <FrameLayout
+            android:id="@+id/animation_view"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@color/cargando"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <FrameLayout
+            android:id="@+id/Codigo"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="50dp"
+            android:hint="@string/fragment_acompleted_veri"
+            android:background="@color/cargando"/>
+
+        <LinearLayout
+            android:id="@+id/contenedorButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+
+            <FrameLayout
+                android:id="@+id/btnComprobarCodigo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/cargando"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                />
+            <FrameLayout
+                android:id="@+id/btnReenviarCodigo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/cargando"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

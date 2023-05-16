@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="@string/homefragment_inicio"
+        android:id="@+id/home"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/icono_home"/>
+    <item android:title="@string/profilefragment_perfil"
+        android:id="@+id/profile"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/icono_perfil"/>
+    <item android:title="@string/aboutfragment_about"
+        android:id="@+id/about"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/icono_info"/>
+</menu>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.RegistrarCiudad1Fragment"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+   >
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@color/background"
+           >
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               android:orientation="vertical"
+               >
+
+               <TextView
+                   android:id="@+id/tvNombreCiudad"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:fontFamily="@font/title"
+                   android:textColor="@color/titulo"
+                   android:textSize="35sp"
+                   android:textStyle="bold"
+                   android:text="@string/framgent_registrar_ciudad1_registrarciudad"
+                   android:gravity="center"/>
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/Ciudad"
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:layout_width="250dp"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/framgent_registrar_ciudad1_nombreciudad"
+                   android:textColorHint="@color/titulo"
+                   app:boxStrokeColor="@color/black"
+                   app:boxStrokeWidthFocused="2dp"
+                   app:counterTextColor="@color/titulo"
+                   app:counterEnabled="true"
+                   app:counterMaxLength="40"
+                   app:endIconMode="clear_text"
+                   app:endIconTint="@color/titulo"
+                   app:hintTextColor="@color/titulo"
+                   app:startIconDrawable="@drawable/baseline_location_city_24"
+                   app:startIconTint="@color/titulo"
+                   android:layout_gravity="center"
+                   android:layout_margin="20dp">
+
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:textColor="@color/titulo"
+                       android:id="@+id/txtCiudad"
+                       android:maxLength="40"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:inputType="text" />
+
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/Descripcion"
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:layout_width="250dp"
+                   android:layout_height="181dp"
+                   android:layout_gravity="center"
+                   android:layout_margin="20dp"
+                   android:hint="@string/framgent_registrar_ciudad1_escribedescripcion"
+                   android:textColorHint="@color/titulo"
+                   app:boxStrokeColor="@color/titulo"
+                   app:boxStrokeWidthFocused="2dp"
+                   app:counterEnabled="true"
+                   app:counterMaxLength="735"
+                   app:counterTextColor="@color/titulo"
+                   app:endIconMode="clear_text"
+                   app:endIconTint="@color/titulo"
+                   app:hintTextColor="@color/titulo"
+                   app:startIconDrawable="@drawable/icono_description"
+                   app:startIconTint="@color/titulo">
+
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:id="@+id/txtDescripcion"
+                       android:layout_width="match_parent"
+                       android:layout_height="149dp"
+                       android:inputType="textMultiLine"
+                       android:maxLength="735"
+                       android:textColor="@color/titulo" />
+
+
+               </com.google.android.material.textfield.TextInputLayout>
+               <Spinner
+                   android:id="@+id/paisDestino"
+                   android:layout_width="250dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_margin="20dp"
+                   />
+
+               <ImageView
+                   android:id="@+id/imgCiudad"
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:layout_gravity="center"
+                   app:srcCompat="@drawable/imgfoto" />
+
+               <Button
+                   android:id="@+id/btnNextPage"
+                   android:layout_width="250dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_margin="20dp"
+                   style="@style/botones"
+                   android:text="@string/framgent_register_next" />
+
+
+
+
+           </LinearLayout>
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+   </ScrollView>
+
+</LinearLayout>

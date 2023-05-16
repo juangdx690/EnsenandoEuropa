@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:elevation="50dp"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.RegistrarCiudad2Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvNombreCiudad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/title"
+                    android:gravity="center"
+                    android:text="@string/framgent_registrar_ciudad1_registrarciudad"
+                    android:textColor="@color/titulo"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvFesti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/title"
+                    android:gravity="center"
+                    android:text="@string/receta"
+                    android:textColor="@color/titulo"
+                    android:layout_margin="10dp"
+                    android:textSize="25sp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Comida"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:hint="@string/framgent_registrar_ciudad2_nombrereceta"
+                    android:textColorHint="@color/titulo"
+                    app:counterTextColor="@color/titulo"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="60"
+                    app:boxStrokeColor="@color/titulo"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/titulo"
+                    app:hintTextColor="@color/titulo"
+                    app:startIconDrawable="@drawable/food_recipe"
+                    app:startIconTint="@color/titulo">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtComida"
+                        android:layout_width="match_parent"
+                        android:maxLength="60"
+                        android:layout_height="match_parent"
+                        android:inputType="text"
+                        android:textColor="@color/titulo" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/DescripcionComida"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="250dp"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:hint="@string/framgent_registrar_ciudad1_escribedescripcion"
+                    android:textColorHint="@color/titulo"
+                    app:boxStrokeColor="@color/titulo"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="735"
+                    app:counterTextColor="@color/titulo"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/titulo"
+                    app:hintTextColor="@color/titulo"
+                    app:startIconDrawable="@drawable/desc_recipe"
+                    app:startIconTint="@color/titulo">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtDescComida"
+                        android:layout_width="match_parent"
+                        android:layout_height="166dp"
+                        android:inputType="textMultiLine"
+                        android:maxLength="735"
+                        android:textColor="@color/titulo" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/imgComida"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/imgfoto" />
+
+                <Button
+                    android:id="@+id/btnNextPage"
+                    style="@style/botones"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:text="@string/framgent_register_next" />
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
